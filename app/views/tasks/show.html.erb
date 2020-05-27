@@ -1,0 +1,7 @@
+<h1>タスク詳細ページ</h1>
+
+<p><%= @task.content %></p>
+
+<%= link_to '一覧に戻る', tasks_path %>
+<%= link_to '編集', edit_task_path(@task), data: { confirm: 'ほんまにええ？' } %>
+<%= link_to '削除', @task, method: :delete, data: { confirm: 'ほんまにええ？' } %>

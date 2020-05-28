@@ -1,6 +1,6 @@
 <h1>タスク詳細ページ</h1>
-
-<p><%= @task.content %></p>
+<p>ステイタス: <%= @task.status %></p>
+<p>内容：<%= @task.content %></p>
 
 <%= link_to '一覧に戻る', tasks_path %>
 <%= link_to '編集', edit_task_path(@task) %>

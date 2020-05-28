@@ -1,10 +1,5 @@
 <h1>タスク編集ページ</h1>
 
-<%= form_with(model: @task, local: true) do |f| %>
- 
-  <%= f.text_field :content %>
+<%= render 'form', task: @task %>
 
-  <%= f.submit '追加' %>
-<% end %>
-
-<%= link_to '一覧に戻る', task_path %>
+<%= link_to '一覧に戻る', tasks_path %>
